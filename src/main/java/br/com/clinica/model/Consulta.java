@@ -38,6 +38,10 @@ public class Consulta {
         this.status = status;
     }
 
+    public void cancelar() {
+        this.status = StatusConsulta.CANCELADA;
+    }
+
     public Long getId() { return id; }
     public LocalDateTime getDataHora() { return dataHora; }
     public StatusConsulta getStatus() { return status; }
